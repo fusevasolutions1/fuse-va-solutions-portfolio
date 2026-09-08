@@ -262,7 +262,16 @@ button { font-family: inherit; cursor: pointer; }
   margin: 0 auto;
   overflow: hidden;
 }
-.hero-shapes { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.hero-inner {
+  min-width: 0;
+  position: relative;
+  z-index: 2;
+}
+.hero-visual {
+  position: relative;
+  z-index: 2;
+}
+.hero-shapes { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
 .blob {
   position: absolute;
   border-radius: 50%;
@@ -314,6 +323,10 @@ button { font-family: inherit; cursor: pointer; }
 .reveal-line { display: block; overflow: hidden; }
 .reveal-word {
   display: inline-block;
+  transform: translateY(0);
+  opacity: 1;
+}
+.js-ready .reveal-word {
   transform: translateY(110%);
   opacity: 0;
 }
@@ -401,13 +414,17 @@ button { font-family: inherit; cursor: pointer; }
    REVEAL ON SCROLL
    ========================================================= */
 .reveal-el, .reveal-up, .reveal-left, .reveal-right {
-  opacity: 0;
+  opacity: 1;
+  transform: none;
   transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
 }
-.reveal-up { transform: translateY(28px); }
-.reveal-left { transform: translateX(-32px); }
-.reveal-right { transform: translateX(32px); }
-.reveal-el { transform: translateY(16px); }
+
+/* Hide animated elements only after JavaScript has loaded.
+   This keeps the page readable if JS is blocked or fails. */
+.js-ready .reveal-up { opacity: 0; transform: translateY(28px); }
+.js-ready .reveal-left { opacity: 0; transform: translateX(-32px); }
+.js-ready .reveal-right { opacity: 0; transform: translateX(32px); }
+.js-ready .reveal-el { opacity: 0; transform: translateY(16px); }
 
 .reveal-up.is-visible,
 .reveal-left.is-visible,
