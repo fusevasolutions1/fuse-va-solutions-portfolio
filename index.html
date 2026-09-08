@@ -1,730 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FUSE — Freelance Unified Skills &amp; Experts</title>
-<meta name="description" content="FUSE is a collaborative freelance team offering lead generation, cold calling, social media, graphic design, video editing, data support, basic GHL, and real estate support.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FUSE — Freelance Unified Skills & Experts. Remote sales, marketing, creative, data and administrative support.">
+  <title>FUSE | Remote Sales, Marketing & Creative Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="progress" id="progress"></div>
 
-<div class="scroll-progress" id="scrollProgress"></div>
-
-<!-- ============ NAVIGATION ============ -->
-<header class="nav" id="siteNav">
-  <div class="nav-inner">
-    <a href="#top" class="nav-logo">FUSE</a>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#team" class="nav-link">Team</a>
-      <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#workflow" class="nav-link">Workflow</a>
-      <a href="#tools" class="nav-link">Tools</a>
-      <a href="#why-us" class="nav-link">Why Us</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<div class="mobile-menu" id="mobileMenu">
-  <nav class="mobile-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#team">Team</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#workflow">Workflow</a>
-    <a href="#tools">Tools</a>
-    <a href="#why-us">Why Us</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</div>
-
-<!-- ============ HERO ============ -->
-<section class="hero" id="top">
-  <div class="hero-shapes" aria-hidden="true">
-    <span class="blob blob-a"></span>
-    <span class="blob blob-b"></span>
-    <span class="hero-line"></span>
-  </div>
-
-  <div class="hero-inner">
-    <p class="hero-eyebrow reveal-el">Freelance Unified Skills &amp; Experts</p>
-
-    <h1 class="hero-title">
-      <span class="reveal-line"><span class="reveal-word">Remote sales,</span></span>
-      <span class="reveal-line"><span class="reveal-word">marketing &amp;</span></span>
-      <span class="reveal-line"><span class="reveal-word">creative support.</span></span>
-    </h1>
-
-    <p class="hero-tags reveal-el">Lead Generation · Cold Calling · Social Media · Graphic Design · Video Editing · Data Support · Basic GHL · Real Estate Support</p>
-
-    <p class="hero-statement reveal-el">One team. Multiple skills. Reliable support.</p>
-
-    <div class="hero-cta reveal-el">
-      <a href="#services" class="btn btn-primary"><span>View our services</span></a>
-      <a href="#team" class="btn btn-outline"><span>Meet the team</span></a>
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="FUSE home"><span>F</span>USE</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#team">Team</a>
+        <a href="#work">Work</a><a href="#process">Process</a><a href="#contact" class="nav-cta">Let's talk <b>↗</b></a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
     </div>
-  </div>
-
-  <div class="hero-visual reveal-el" aria-hidden="true">
-    <div class="hero-visual-frame">
-      <div class="hero-visual-grid">
-        <span>Sales</span><span>Design</span><span>Video</span><span>Data</span><span>Social</span><span>GHL</span>
-      </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#team">Team</a>
+      <a href="#work">Work</a><a href="#process">Process</a><a href="#contact">Contact</a>
     </div>
-  </div>
+  </header>
 
-  <a href="#about" class="scroll-cue" aria-label="Scroll to next section">
-    <span class="scroll-cue-line"></span>
-  </a>
-</section>
-
-<main>
-
-<!-- ============ 01 WHO WE ARE ============ -->
-<section class="section" id="about">
-  <div class="section-inner about-grid">
-    <div class="section-head reveal-up">
-      <span class="section-num">01</span>
-      <span class="section-label">Who we are</span>
-    </div>
-
-    <div class="about-content">
-      <h2 class="section-title reveal-up">A flexible remote team built to support growing businesses</h2>
-
-      <div class="about-text reveal-up">
-        <p>We are a collaborative remote team with different areas of expertise across sales support, lead generation, cold calling, social media, graphic design, video editing, data analysis, data entry, presentation design, and basic GHL support.</p>
-        <p>Each team member has a primary specialty, but we work collaboratively and support one another when workloads change or additional assistance is needed.</p>
-        <p>Our goal is to give businesses access to a reliable team that can handle multiple day-to-day tasks without the need to hire and manage several separate freelancers.</p>
-      </div>
-
-      <ul class="about-pillars reveal-up">
-        <li>Clear communication</li>
-        <li>Organized workflows</li>
-        <li>Quality work</li>
-        <li>Dependable support</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 02 SERVICES ============ -->
-<section class="section section-alt" id="services">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">02</span>
-      <span class="section-label">What we do</span>
-    </div>
-    <h2 class="section-title reveal-up">Our core services</h2>
-
-    <div class="services-grid">
-      <article class="service-card reveal-up">
-        <span class="service-index">01</span>
-        <h3>Sales &amp; Lead Generation</h3>
-        <ul>
-          <li>Lead generation</li>
-          <li>Prospect research</li>
-          <li>Lead list building</li>
-          <li>Cold calling</li>
-          <li>Lead follow-up</li>
-          <li>Appointment setting</li>
-          <li>Lead qualification</li>
-        </ul>
-      </article>
-
-      <article class="service-card reveal-up">
-        <span class="service-index">02</span>
-        <h3>Social Media Management</h3>
-        <ul>
-          <li>Content planning</li>
-          <li>Content scheduling</li>
-          <li>Caption support</li>
-          <li>Engagement</li>
-          <li>Social media research</li>
-          <li>Content coordination</li>
-        </ul>
-      </article>
-
-      <article class="service-card reveal-up">
-        <span class="service-index">03</span>
-        <h3>Graphic Design</h3>
-        <ul>
-          <li>Social media graphics</li>
-          <li>Flyers</li>
-          <li>Promotional materials</li>
-          <li>Real estate marketing materials</li>
-          <li>Branded content</li>
-          <li>Presentations</li>
-          <li>Marketing collateral</li>
-        </ul>
-      </article>
-
-      <article class="service-card reveal-up">
-        <span class="service-index">04</span>
-        <h3>Video Editing</h3>
-        <ul>
-          <li>Reels</li>
-          <li>Short-form videos</li>
-          <li>Social media videos</li>
-          <li>Promotional videos</li>
-          <li>Property videos</li>
-          <li>Captions and subtitles</li>
-          <li>Basic video enhancements</li>
-        </ul>
-      </article>
-
-      <article class="service-card reveal-up">
-        <span class="service-index">05</span>
-        <h3>Data &amp; Admin Support</h3>
-        <ul>
-          <li>Data entry</li>
-          <li>Data analysis</li>
-          <li>Spreadsheet management</li>
-          <li>Online research</li>
-          <li>Data organization</li>
-          <li>File organization</li>
-          <li>General administrative support</li>
-        </ul>
-      </article>
-
-      <article class="service-card reveal-up">
-        <span class="service-index">06</span>
-        <h3>Basic GHL Support</h3>
-        <ul>
-          <li>Basic landing pages</li>
-          <li>Forms</li>
-          <li>Email / newsletter setup</li>
-          <li>Basic workflows</li>
-          <li>Content updates</li>
-          <li>General GHL support</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 03 TEAM ============ -->
-<section class="section" id="team">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">03</span>
-      <span class="section-label">Our team</span>
-    </div>
-    <h2 class="section-title reveal-up">Meet the people behind the work</h2>
-
-    <div class="team-grid">
-
-      <article class="team-card reveal-up">
-        <div class="team-photo"><img src="assets/team/kithana.svg" alt="Portrait of Kithana" loading="lazy"></div>
-        <div class="team-info">
-          <h3>Kithana</h3>
-          <p class="team-specialty">Graphic Design · Basic GHL · Video Editing · Data Analysis</p>
-          <p class="team-desc">Kithana focuses on creative and digital support, including graphic design, video editing, basic GHL tasks, data analysis, and marketing-related projects.</p>
-          <p class="team-tools">Canva · CapCut · GoHighLevel · Google Sheets · Google Workspace</p>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> FREELANCE UNIFIED SKILLS & EXPERTS</p>
+          <h1>One team.<br><em>Multiple skills.</em><br>Real support.</h1>
+          <p class="hero-lead">Remote sales, marketing, creative, data, and administrative support for businesses that need reliable people behind the work.</p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#services">Explore services <span>↗</span></a>
+            <a class="text-link" href="#work">See our work <span>→</span></a>
+          </div>
+          <div class="hero-proof"><strong>6+</strong><span>specialists</span><b></b><strong>8</strong><span>core support areas</span><b></b><strong>1</strong><span>collaborative team</span></div>
         </div>
-      </article>
-
-      <article class="team-card reveal-up">
-        <div class="team-photo"><img src="assets/team/chrytel.svg" alt="Portrait of Chrytel" loading="lazy"></div>
-        <div class="team-info">
-          <h3>Chrytel</h3>
-          <p class="team-specialty">Cold Calling · Lead Generation · BPO Support</p>
-          <p class="team-desc">Chrytel specializes in outbound communication, cold calling, lead generation, prospecting, and customer interaction, supported by BPO experience.</p>
-          <p class="team-tools">Google Sheets · Google Workspace · Dialer Platforms · CRM / Lead Platforms as provided by the client</p>
+        <div class="hero-panel">
+          <div class="panel-top"><span>FUSE / 01</span><span>REMOTE SUPPORT</span></div>
+          <div class="panel-title">Built around<br><strong>your workflow.</strong></div>
+          <div class="skill-stack">
+            <div><small>01</small><span>Sales & Lead Generation</span><b>↗</b></div>
+            <div><small>02</small><span>Social & Graphic Design</span><b>↗</b></div>
+            <div><small>03</small><span>Video & Content</span><b>↗</b></div>
+            <div><small>04</small><span>Data & Admin Support</span><b>↗</b></div>
+            <div><small>05</small><span>Basic GHL Support</span><b>↗</b></div>
+          </div>
+          <div class="panel-foot">CLEAR COMMUNICATION <span>•</span> ORGANIZED WORKFLOWS <span>•</span> DEPENDABLE SUPPORT</div>
         </div>
-      </article>
+      </div>
+      <a class="scroll-down" href="#about">SCROLL <span>↓</span></a>
+    </section>
 
-      <article class="team-card reveal-up">
-        <div class="team-photo"><img src="assets/team/jeanibe.svg" alt="Portrait of Jeanibe" loading="lazy"></div>
-        <div class="team-info">
-          <h3>Jeanibe</h3>
-          <p class="team-specialty">BPO Support · Lead Generation · Cold Calling · Graphic Design</p>
-          <p class="team-desc">Jeanibe brings BPO experience together with lead generation, cold calling, prospecting, and graphic design support.</p>
-          <p class="team-tools">Canva · Google Sheets · Google Workspace · Dialer Platforms</p>
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-kicker"><span>01</span> WHO WE ARE</div>
+        <div class="about-grid">
+          <div><h2>Different specialties.<br><span>One dependable team.</span></h2></div>
+          <div class="about-copy">
+            <p class="large">FUSE is a collaborative remote team built to help growing businesses handle the work that keeps everything moving.</p>
+            <p>From lead generation and cold calling to social media, design, video editing, data support, and basic GHL tasks, we bring multiple skill sets together without making you manage a different freelancer for every task.</p>
+            <div class="values"><span>01 / Clear communication</span><span>02 / Organized workflows</span><span>03 / Quality work</span><span>04 / Dependable support</span></div>
+          </div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="team-card reveal-up">
-        <div class="team-photo"><img src="assets/team/glenn.svg" alt="Portrait of Glenn" loading="lazy"></div>
-        <div class="team-info">
-          <h3>Glenn</h3>
-          <p class="team-specialty">Graphic Design · Data Entry</p>
-          <p class="team-desc">Glenn focuses on graphic design and detail-oriented data entry, helping with visual content and organized information management.</p>
-          <p class="team-tools">Canva · Google Sheets · Microsoft Excel · Google Workspace</p>
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-kicker"><span>02</span> WHAT WE DO</div>
+        <div class="section-heading"><h2>Support where<br><span>you need it most.</span></h2><p>Practical services designed around day-to-day business needs.</p></div>
+        <div class="service-grid">
+          <article class="service"><span>01</span><h3>Sales & Lead Generation</h3><p>Prospect research, lead lists, cold calling, qualification, follow-ups and appointment setting.</p><div class="tags"><i>Lead Research</i><i>Cold Calling</i><i>Appointment Setting</i></div></article>
+          <article class="service"><span>02</span><h3>Social Media</h3><p>Content planning, scheduling, captions, engagement, research and content coordination.</p><div class="tags"><i>Planning</i><i>Scheduling</i><i>Engagement</i></div></article>
+          <article class="service"><span>03</span><h3>Graphic Design</h3><p>Social graphics, promotional materials, flyers, real estate assets, presentations and branded content.</p><div class="tags"><i>Canva</i><i>Presentations</i><i>Marketing Collateral</i></div></article>
+          <article class="service"><span>04</span><h3>Video Editing</h3><p>Reels, short-form videos, property videos, promotional content, captions and subtitles.</p><div class="tags"><i>Reels</i><i>CapCut</i><i>Short-form</i></div></article>
+          <article class="service"><span>05</span><h3>Data & Admin</h3><p>Data entry, spreadsheet management, research, organization, reporting and general administrative support.</p><div class="tags"><i>Excel</i><i>Google Sheets</i><i>Research</i></div></article>
+          <article class="service"><span>06</span><h3>Basic GHL Support</h3><p>Basic landing pages, forms, email setup, workflows, content updates and platform organization.</p><div class="tags"><i>GoHighLevel</i><i>Forms</i><i>Workflows</i></div></article>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="team-card reveal-up">
-        <div class="team-photo"><img src="assets/team/edwin.svg" alt="Portrait of Edwin" loading="lazy"></div>
-        <div class="team-info">
-          <h3>Edwin</h3>
-          <p class="team-specialty">Graphic Design · Video Editing · Social Media Support</p>
-          <p class="team-desc">Edwin focuses on graphic design, video editing, and social media content support.</p>
-          <p class="team-tools">Canva · CapCut · Google Workspace</p>
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section-kicker"><span>03</span> THE TEAM</div>
+        <div class="section-heading"><h2>People behind<br><span>the work.</span></h2><p>Every member has a primary specialty. Everyone supports the bigger picture.</p></div>
+        <div class="team-grid">
+          <article class="person"><div class="person-photo"><img src="assets/team/kithana.svg" alt="Kithana"></div><div class="person-meta"><span>01</span><h3>Kithana</h3><strong>Graphic Design · GHL · Video · Data</strong><p>Creative and digital support across design, video editing, basic GHL and data analysis.</p></div></article>
+          <article class="person"><div class="person-photo"><img src="assets/team/chrytel.svg" alt="Chrytel"></div><div class="person-meta"><span>02</span><h3>Chrytel</h3><strong>Cold Calling · Lead Generation</strong><p>Outbound communication, prospecting, lead generation and customer interaction.</p></div></article>
+          <article class="person"><div class="person-photo"><img src="assets/team/jeanibe.jpg" alt="Jeanibe"></div><div class="person-meta"><span>03</span><h3>Jeanibe</h3><strong>BPO · Lead Generation · Cold Calling · Graphic Design · Admin Support</strong><p>Jeanibe combines BPO experience with lead generation, cold calling, graphic design, and administrative support, helping businesses stay organized while supporting both their sales and creative needs.</p></div></article>
+          <article class="person"><div class="person-photo"><img src="assets/team/glenn.svg" alt="Glenn"></div><div class="person-meta"><span>04</span><h3>Glenn</h3><strong>Graphic Design · Data Entry</strong><p>Visual content and detail-oriented data entry with an organized approach.</p></div></article>
+          <article class="person"><div class="person-photo"><img src="assets/team/edwin.svg" alt="Edwin"></div><div class="person-meta"><span>05</span><h3>Edwin</h3><strong>Design · Video · Social</strong><p>Graphic design, video editing and social media content support.</p></div></article>
+          <article class="person"><div class="person-photo"><img src="assets/team/jaymar.svg" alt="Jaymar"></div><div class="person-meta"><span>06</span><h3>Jaymar</h3><strong>Video · Design · PowerPoint</strong><p>Video editing, graphic design and professional presentation design.</p></div></article>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="team-card reveal-up">
-        <div class="team-photo"><img src="assets/team/jaymar.svg" alt="Portrait of Jaymar" loading="lazy"></div>
-        <div class="team-info">
-          <h3>Jaymar</h3>
-          <p class="team-specialty">Video Editing · Graphic Design · PowerPoint Design</p>
-          <p class="team-desc">Jaymar specializes in video editing, graphic design, and creating professional PowerPoint presentations and visual materials.</p>
-          <p class="team-tools">CapCut · Canva · Microsoft PowerPoint · Google Slides</p>
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section-kicker"><span>04</span> SELECTED WORK</div>
+        <div class="section-heading"><h2>A glimpse of<br><span>what we create.</span></h2><p>Creative work across design, social media, presentations and real estate.</p></div>
+        <div class="work-tabs" role="tablist">
+          <button class="active" data-filter="all">All</button><button data-filter="Graphic Design">Graphic Design</button><button data-filter="Social Media">Social Media</button><button data-filter="Presentations">Presentations</button><button data-filter="Real Estate">Real Estate</button><button data-filter="Video Editing">Video</button>
         </div>
-      </article>
-
-    </div>
-
-    <p class="team-note reveal-up">Although every member has a primary specialty, we believe in cross-support. When a member has available capacity, they assist another member so tasks keep moving.</p>
-  </div>
-</section>
-
-<!-- ============ 04 PORTFOLIO ============ -->
-<section class="section section-alt" id="portfolio">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">04</span>
-      <span class="section-label">Our work</span>
-    </div>
-    <h2 class="section-title reveal-up">Selected work</h2>
-
-    <div class="portfolio-filters reveal-up" role="tablist" aria-label="Filter portfolio by category">
-      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
-      <button class="filter-btn" data-filter="Graphic Design" role="tab" aria-selected="false">Graphic Design</button>
-      <button class="filter-btn" data-filter="Social Media" role="tab" aria-selected="false">Social Media</button>
-      <button class="filter-btn" data-filter="Video Editing" role="tab" aria-selected="false">Video Editing</button>
-      <button class="filter-btn" data-filter="Presentations" role="tab" aria-selected="false">Presentations</button>
-      <button class="filter-btn" data-filter="Real Estate" role="tab" aria-selected="false">Real Estate</button>
-    </div>
-
-    <div class="portfolio-grid" id="portfolioGrid">
-      <!-- Items injected by script.js from the PORTFOLIO_ITEMS data -->
-    </div>
-  </div>
-</section>
-
-<!-- ============ 05 LEAD GENERATION & COLD CALLING ============ -->
-<section class="section" id="lead-generation">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">05</span>
-      <span class="section-label">Lead generation &amp; cold calling</span>
-    </div>
-    <h2 class="section-title reveal-up">Building connections and creating opportunities</h2>
-    <p class="section-lead reveal-up">Our sales support team helps businesses identify potential prospects and reach them through organized lead generation and outbound calling.</p>
-
-    <div class="process-timeline reveal-up" role="list">
-      <div class="process-step" role="listitem"><span>Research</span></div>
-      <div class="process-step" role="listitem"><span>Build lead list</span></div>
-      <div class="process-step" role="listitem"><span>Verify</span></div>
-      <div class="process-step" role="listitem"><span>Contact</span></div>
-      <div class="process-step" role="listitem"><span>Follow up</span></div>
-      <div class="process-step" role="listitem"><span>Qualify</span></div>
-      <div class="process-step" role="listitem"><span>Report</span></div>
-    </div>
-
-    <div class="support-list reveal-up">
-      <h3>Support we can provide</h3>
-      <div class="support-columns">
-        <ul>
-          <li>Prospect research</li>
-          <li>Lead list building</li>
-          <li>Contact information gathering</li>
-          <li>Lead qualification</li>
-        </ul>
-        <ul>
-          <li>Cold calling</li>
-          <li>Follow-up calls</li>
-          <li>Appointment setting</li>
-          <li>Call activity reporting</li>
-        </ul>
+        <div class="work-grid" id="workGrid"></div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ============ 06 SOCIAL MEDIA & GRAPHIC DESIGN ============ -->
-<section class="section section-alt" id="social-design">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">06</span>
-      <span class="section-label">Social media &amp; graphic design</span>
-    </div>
-    <h2 class="section-title reveal-up">Building a consistent online presence</h2>
-    <p class="section-lead reveal-up">Our creative team helps businesses maintain professional and engaging visual content across their social media platforms.</p>
-
-    <div class="two-col reveal-up">
-      <div class="two-col-block">
-        <h3>Social media support</h3>
-        <ul>
-          <li>Content planning</li>
-          <li>Content scheduling</li>
-          <li>Caption support</li>
-          <li>Engagement</li>
-          <li>Social media research</li>
-          <li>Content coordination</li>
-        </ul>
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-kicker"><span>05</span> HOW WE WORK</div>
+        <div class="process-grid">
+          <div><h2>A simple process.<br><span>Less friction.</span></h2><p>We keep communication clear and tasks moving from request to delivery.</p></div>
+          <div class="steps">
+            <div><b>01</b><h3>Request</h3><p>Share the task, objective, instructions and deadline.</p></div>
+            <div><b>02</b><h3>Match</h3><p>We identify the right specialist for the work.</p></div>
+            <div><b>03</b><h3>Execute</h3><p>The assigned member completes the task to your requirements.</p></div>
+            <div><b>04</b><h3>Review</h3><p>Quality is checked when needed before delivery.</p></div>
+            <div><b>05</b><h3>Deliver</h3><p>You receive the completed work and a clear update.</p></div>
+            <div><b>06</b><h3>Follow up</h3><p>Feedback, revisions and next priorities stay organized.</p></div>
+          </div>
+        </div>
       </div>
-      <div class="two-col-block">
-        <h3>Graphic design</h3>
-        <ul>
-          <li>Social media posts</li>
-          <li>Promotional graphics</li>
-          <li>Flyers</li>
-          <li>Real estate graphics</li>
-          <li>Property marketing materials</li>
-          <li>Event graphics</li>
-          <li>Presentations</li>
-          <li>Branded content</li>
-        </ul>
+    </section>
+
+    <section class="section toolkit">
+      <div class="container">
+        <div class="section-kicker"><span>06</span> OUR TOOLKIT</div>
+        <div class="toolkit-row"><span>CANVA</span><span>CAPCUT</span><span>GOOGLE WORKSPACE</span><span>GOOGLE SHEETS</span><span>MICROSOFT OFFICE</span><span>GOHIGHLEVEL</span><span>ZOOM</span></div>
+        <p>We also adapt to the client's preferred tools and existing workflow.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="mini-gallery reveal-up">
-      <p class="mini-gallery-label">Design portfolio</p>
-      <div class="mini-gallery-grid" id="designGallery"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 07 VIDEO EDITING ============ -->
-<section class="section" id="video-editing">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">07</span>
-      <span class="section-label">Video editing</span>
-    </div>
-    <h2 class="section-title reveal-up">Turning ideas into engaging content</h2>
-
-    <div class="video-tags reveal-up">
-      <span>Reels</span><span>Short-form videos</span><span>Social media content</span><span>Property videos</span><span>Promotional videos</span><span>Talking-head videos</span><span>Captions &amp; subtitles</span><span>Basic transitions &amp; enhancements</span>
-    </div>
-
-    <div class="video-grid" id="videoGrid"></div>
-  </div>
-</section>
-
-<!-- ============ 08 DATA & ADMIN SUPPORT ============ -->
-<section class="section section-alt" id="data-admin">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">08</span>
-      <span class="section-label">Data &amp; admin support</span>
-    </div>
-    <h2 class="section-title reveal-up">Keeping information organized</h2>
-    <p class="section-lead reveal-up">We provide reliable support for repetitive, detail-oriented, and data-related tasks that help businesses stay organized.</p>
-
-    <div class="two-col reveal-up">
-      <div class="two-col-block">
-        <h3>Data support</h3>
-        <ul>
-          <li>Data entry</li>
-          <li>Data analysis</li>
-          <li>Spreadsheet management</li>
-          <li>Data organization</li>
-          <li>Online research</li>
-          <li>Information gathering</li>
-          <li>File organization</li>
-          <li>Basic reporting</li>
-        </ul>
+    <section class="cta" id="contact">
+      <div class="cta-glow"></div>
+      <div class="container cta-inner">
+        <p class="eyebrow"><span></span> READY WHEN YOU ARE</p>
+        <h2>Let's build a stronger<br><em>support system.</em></h2>
+        <p>Tell us what you need help with. We'll bring the right skills to the table.</p>
+        <div class="cta-actions"><a class="btn btn-light" href="#services">View services <span>↗</span></a><a class="btn btn-outline-light" href="mailto:hello@fuseteam.example">Start a conversation <span>↗</span></a></div>
+        <small>FUSE — Freelance Unified Skills & Experts</small>
       </div>
-      <div class="two-col-block">
-        <h3>Admin support</h3>
-        <ul>
-          <li>Document organization</li>
-          <li>Presentation preparation</li>
-          <li>Online research</li>
-          <li>Information management</li>
-          <li>General administrative tasks</li>
-        </ul>
-      </div>
-    </div>
+    </section>
+  </main>
 
-    <p class="tools-inline reveal-up">Google Sheets · Google Docs · Microsoft Excel · Google Workspace · Microsoft Office</p>
-  </div>
-</section>
-
-<!-- ============ 09 BASIC GHL ============ -->
-<section class="section" id="ghl">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">09</span>
-      <span class="section-label">Basic GHL support</span>
-    </div>
-    <h2 class="section-title reveal-up">Supporting your marketing systems</h2>
-    <p class="section-lead reveal-up">Our team currently provides basic GoHighLevel support for businesses that need assistance with simple marketing and platform-related tasks.</p>
-
-    <div class="ghl-grid reveal-up">
-      <ul class="ghl-list">
-        <li>Basic landing pages</li>
-        <li>Forms</li>
-        <li>Email / newsletter setup</li>
-        <li>Basic workflows</li>
-        <li>Content updates</li>
-        <li>Basic platform organization</li>
-      </ul>
-      <p class="ghl-statement">We are continuously developing our GHL skills and can work according to the client's existing processes and instructions.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 10 REAL ESTATE SUPPORT ============ -->
-<section class="section section-alt" id="real-estate">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">10</span>
-      <span class="section-label">Real estate support</span>
-    </div>
-    <h2 class="section-title reveal-up">Support for real estate professionals</h2>
-    <p class="section-lead reveal-up">Our combined experience makes us a flexible support option for real estate professionals and teams.</p>
-
-    <div class="service-rows reveal-up">
-      <div class="service-row">
-        <h3>Lead generation</h3>
-        <p>Prospect research and targeted lead list building.</p>
-      </div>
-      <div class="service-row">
-        <h3>Cold calling</h3>
-        <p>Outbound calls, follow-ups, qualification, and appointment setting.</p>
-      </div>
-      <div class="service-row">
-        <h3>Social media</h3>
-        <p>Content planning, posting support, engagement, and social media content.</p>
-      </div>
-      <div class="service-row">
-        <h3>Graphic design</h3>
-        <p>Property graphics, listing materials, open house promotions, and social media designs.</p>
-      </div>
-      <div class="service-row">
-        <h3>Video editing</h3>
-        <p>Property videos, reels, short-form content, and promotional videos.</p>
-      </div>
-      <div class="service-row">
-        <h3>Data &amp; admin</h3>
-        <p>Data entry, spreadsheets, research, organization, and general support.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 11 WORKFLOW ============ -->
-<section class="section" id="workflow">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">11</span>
-      <span class="section-label">Our workflow</span>
-    </div>
-    <h2 class="section-title reveal-up">One team. One organized process.</h2>
-
-    <div class="timeline">
-      <div class="timeline-step reveal-left">
-        <span class="timeline-num">01</span>
-        <div><h3>Client request</h3><p>The client provides the task, objective, instructions, and deadline.</p></div>
-      </div>
-      <div class="timeline-step reveal-right">
-        <span class="timeline-num">02</span>
-        <div><h3>Team coordination</h3><p>The team lead reviews the request and determines who is best suited for the task.</p></div>
-      </div>
-      <div class="timeline-step reveal-left">
-        <span class="timeline-num">03</span>
-        <div><h3>Task assignment</h3><p>The task is assigned to the appropriate team member.</p></div>
-      </div>
-      <div class="timeline-step reveal-right">
-        <span class="timeline-num">04</span>
-        <div><h3>Work in progress</h3><p>The assigned member completes the task based on the client's requirements.</p></div>
-      </div>
-      <div class="timeline-step reveal-left">
-        <span class="timeline-num">05</span>
-        <div><h3>Quality check</h3><p>The work is reviewed when necessary before delivery.</p></div>
-      </div>
-      <div class="timeline-step reveal-right">
-        <span class="timeline-num">06</span>
-        <div><h3>Client delivery</h3><p>The completed work is submitted with a clear update.</p></div>
-      </div>
-      <div class="timeline-step reveal-left">
-        <span class="timeline-num">07</span>
-        <div><h3>Follow-up</h3><p>Feedback, revisions, and upcoming priorities are tracked by the team.</p></div>
-      </div>
-    </div>
-
-    <div class="collab-note reveal-up">
-      <h3>Team collaboration</h3>
-      <p>Although every member has a primary specialty, we believe in cross-support. When a member has available capacity, they can assist another member so tasks continue moving and deadlines are met.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 12 TOOLS ============ -->
-<section class="section section-alt" id="tools">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">12</span>
-      <span class="section-label">Tools we work with</span>
-    </div>
-    <h2 class="section-title reveal-up">Our working toolkit</h2>
-
-    <div class="tools-grid reveal-up">
-      <div class="tools-group">
-        <h3>Design &amp; creative</h3>
-        <p>Canva · CapCut</p>
-      </div>
-      <div class="tools-group">
-        <h3>Data &amp; admin</h3>
-        <p>Google Sheets · Google Docs · Microsoft Excel · Microsoft Office</p>
-      </div>
-      <div class="tools-group">
-        <h3>Presentations</h3>
-        <p>Microsoft PowerPoint · Google Slides</p>
-      </div>
-      <div class="tools-group">
-        <h3>Marketing &amp; GHL</h3>
-        <p>GoHighLevel</p>
-      </div>
-      <div class="tools-group">
-        <h3>Communication &amp; collaboration</h3>
-        <p>Google Workspace · Zoom · Google Meet</p>
-      </div>
-      <div class="tools-group">
-        <h3>Lead generation &amp; calling</h3>
-        <p>Google Sheets · Dialer Platforms · Client-provided lead / calling systems</p>
-      </div>
-    </div>
-
-    <p class="tools-footnote reveal-up">We are also comfortable learning and adapting to the client's preferred tools and existing workflow.</p>
-  </div>
-</section>
-
-<!-- ============ 13 WHY WORK WITH US ============ -->
-<section class="section" id="why-us">
-  <div class="section-inner">
-    <div class="section-head reveal-up">
-      <span class="section-num">13</span>
-      <span class="section-label">Why work with us?</span>
-    </div>
-    <h2 class="section-title reveal-up">More than individual freelancers</h2>
-
-    <div class="why-grid">
-      <article class="why-card reveal-up">
-        <h3>Multiple skill sets</h3>
-        <p>Sales, lead generation, creative, social media, data, and admin support in one team.</p>
-      </article>
-      <article class="why-card reveal-up">
-        <h3>Flexible support</h3>
-        <p>Our members can collaborate across tasks when workload or priorities change.</p>
-      </article>
-      <article class="why-card reveal-up">
-        <h3>One point of contact</h3>
-        <p>The client works with one designated team contact for clearer communication and coordination.</p>
-      </article>
-      <article class="why-card reveal-up">
-        <h3>Cost-efficient</h3>
-        <p>Access multiple skill sets without having to manage several separate freelancers.</p>
-      </article>
-      <article class="why-card reveal-up">
-        <h3>Team accountability</h3>
-        <p>We work together to maintain quality, meet deadlines, and keep tasks organized.</p>
-      </article>
-      <article class="why-card reveal-up">
-        <h3>Built to grow</h3>
-        <p>We are building our systems and skills with the goal of developing long-term partnerships with growing businesses.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FINAL CTA ============ -->
-<section class="section cta-section" id="contact">
-  <div class="cta-shapes" aria-hidden="true"><span class="blob blob-c"></span></div>
-  <div class="section-inner cta-inner">
-    <h2 class="cta-title reveal-up">Let's work together</h2>
-    <p class="cta-subtitle reveal-up">Your goals. Our team.</p>
-    <p class="cta-text reveal-up">Whether you need help with lead generation, cold calling, social media, graphic design, video editing, data support, or basic GHL, our team is ready to help.</p>
-
-    <div class="cta-brand reveal-up">
-      <p class="cta-brand-name">FUSE — Freelance Unified Skills &amp; Experts</p>
-      <p class="cta-brand-sub">Remote Sales · Marketing · Creative · Data · Administrative Support</p>
-    </div>
-
-    <div class="cta-contacts reveal-up">
-      <a href="mailto:hello@fuseteam.example" class="contact-item">
-        <span class="contact-label">Email</span>
-        <span class="contact-value">hello@fuseteam.example</span>
-      </a>
-      <a href="https://wa.me/10000000000" class="contact-item">
-        <span class="contact-label">WhatsApp</span>
-        <span class="contact-value">+1 (000) 000-0000</span>
-      </a>
-      <a href="#portfolio" class="contact-item">
-        <span class="contact-label">Portfolio</span>
-        <span class="contact-value">View our work</span>
-      </a>
-    </div>
-
-    <p class="cta-final reveal-up">Let's build a stronger support system for your business.</p>
-  </div>
-</section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="section-inner footer-inner">
-    <div class="footer-brand">
-      <p class="footer-logo">FUSE</p>
-      <p>Freelance Unified Skills &amp; Experts</p>
-      <p class="footer-statement">One team. Multiple skills. Reliable support.</p>
-    </div>
-
-    <nav class="footer-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#team">Team</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#tools">Tools</a>
-      <a href="#why-us">Why Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="footer-contact">
-      <a href="mailto:hello@fuseteam.example">hello@fuseteam.example</a>
-      <a href="https://wa.me/10000000000">WhatsApp</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 FUSE — Freelance Unified Skills &amp; Experts</p>
-  </div>
-</footer>
-
-<!-- ============ PORTFOLIO MODAL ============ -->
-<div class="modal" id="portfolioModal" aria-hidden="true">
-  <div class="modal-overlay" data-close-modal></div>
-  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button class="modal-close" data-close-modal aria-label="Close">Close</button>
-    <div class="modal-media">
-      <img id="modalImage" src="" alt="">
-    </div>
-    <div class="modal-body">
-      <span class="modal-category" id="modalCategory"></span>
-      <h3 id="modalTitle"></h3>
-      <p id="modalDescription"></p>
-    </div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <footer><div class="container footer-row"><a class="brand" href="#top"><span>F</span>USE</a><p>Remote sales · marketing · creative · data · admin support</p><a href="#top">Back to top ↑</a></div><div class="container footer-bottom"><span>© 2026 FUSE</span><span>One team. Multiple skills. Reliable support.</span></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
