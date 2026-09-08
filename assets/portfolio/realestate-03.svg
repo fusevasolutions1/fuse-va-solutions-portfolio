@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8ED8F8"/>
+      <stop offset="1" stop-color="#39AEEA"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#g)"/>
+  <rect x="0" y="0" width="600" height="450" fill="#0B1724" fill-opacity="0.15"/>
+  <text x="40" y="400" font-family="Georgia, serif" font-size="26" fill="#0B1724" opacity="0.85">Real Estate</text>
+</svg>
